@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{ 
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family:"Roboto", sans-serif ;
+}
+
+h1, h2, h3, h4, h5, h6 strong {
+    color: #232e35 ;
+}
+
+p{
+    font-size: 1rem;      
+    line-height: 1.9rem;
+}
+
+p, span, label, input, textarea, li{
+    color: #656d72;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px){
+    .main-container{
+        width: 90%;
+    }
+}
+  
+/* Button  */
+.btn{
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1.5px solid #f1f1f1;
+    cursor: pointer;
+    transform: .2s ease-in-out;
+}
+
+.btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+
+}
+
+  /* Logo and navigation Menu*/
+
+  .nav{
+    display: flex;
+    justify-content:space-between;
+    padding: 2rem 0;
+  }
+
+  .nav ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+  }
+
+  .logo{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  .logo a{
+    color: #232e35;
+  }
+
+ nav ul li{
+    display: flex;
+    align-items: center;
+ }
+
+  nav ul li a{
+    color: #232e35;
+  }
+
+  /* Burger */
+  
+  .burger div{
+    width: 25px;
+    height: 2px;
+    background-color: #0000;
+    margin: 7px;
+    transition: all .3s;
+    z-index: 99;
+  }
